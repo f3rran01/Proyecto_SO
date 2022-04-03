@@ -44,36 +44,38 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.registro = new System.Windows.Forms.Button();
             this.LogIn = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.Jugar = new System.Windows.Forms.Button();
+            this.Conectados = new System.Windows.Forms.Button();
+            this.conectadosGrid = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.conectadosGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(31, 31);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(23, 25);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(110, 31);
+            this.label2.Size = new System.Drawing.Size(87, 25);
             this.label2.TabIndex = 1;
             this.label2.Text = "Nombre";
             // 
             // nombre
             // 
-            this.nombre.Location = new System.Drawing.Point(155, 38);
-            this.nombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nombre.Location = new System.Drawing.Point(116, 31);
             this.nombre.Name = "nombre";
-            this.nombre.Size = new System.Drawing.Size(217, 22);
+            this.nombre.Size = new System.Drawing.Size(164, 20);
             this.nombre.TabIndex = 3;
-            
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(173, 177);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Location = new System.Drawing.Point(130, 144);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 28);
+            this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 5;
             this.button2.Text = "Enviar";
             this.button2.UseVisualStyleBackColor = true;
@@ -89,11 +91,9 @@
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.nombre);
             this.groupBox1.Enabled = false;
-            this.groupBox1.Location = new System.Drawing.Point(384, 257);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Location = new System.Drawing.Point(288, 209);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox1.Size = new System.Drawing.Size(484, 346);
+            this.groupBox1.Size = new System.Drawing.Size(363, 281);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Peticion";
@@ -101,10 +101,9 @@
             // WinRate
             // 
             this.WinRate.AutoSize = true;
-            this.WinRate.Location = new System.Drawing.Point(155, 138);
-            this.WinRate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.WinRate.Location = new System.Drawing.Point(116, 112);
             this.WinRate.Name = "WinRate";
-            this.WinRate.Size = new System.Drawing.Size(187, 21);
+            this.WinRate.Size = new System.Drawing.Size(142, 17);
             this.WinRate.TabIndex = 11;
             this.WinRate.TabStop = true;
             this.WinRate.Text = "Dime mi ratio de victorias";
@@ -113,10 +112,9 @@
             // Ranking
             // 
             this.Ranking.AutoSize = true;
-            this.Ranking.Location = new System.Drawing.Point(155, 110);
-            this.Ranking.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Ranking.Location = new System.Drawing.Point(116, 89);
             this.Ranking.Name = "Ranking";
-            this.Ranking.Size = new System.Drawing.Size(236, 21);
+            this.Ranking.Size = new System.Drawing.Size(178, 17);
             this.Ranking.TabIndex = 10;
             this.Ranking.TabStop = true;
             this.Ranking.Text = "Dime el ranking de los jugadores";
@@ -125,10 +123,9 @@
             // Victorias
             // 
             this.Victorias.AutoSize = true;
-            this.Victorias.Location = new System.Drawing.Point(155, 81);
-            this.Victorias.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Victorias.Location = new System.Drawing.Point(116, 66);
             this.Victorias.Name = "Victorias";
-            this.Victorias.Size = new System.Drawing.Size(226, 21);
+            this.Victorias.Size = new System.Drawing.Size(172, 17);
             this.Victorias.TabIndex = 9;
             this.Victorias.TabStop = true;
             this.Victorias.Text = "Dime jugador con mas victorias";
@@ -136,10 +133,9 @@
             // 
             // conectar
             // 
-            this.conectar.Location = new System.Drawing.Point(123, 395);
-            this.conectar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.conectar.Location = new System.Drawing.Point(92, 321);
             this.conectar.Name = "conectar";
-            this.conectar.Size = new System.Drawing.Size(100, 28);
+            this.conectar.Size = new System.Drawing.Size(75, 23);
             this.conectar.TabIndex = 13;
             this.conectar.Text = "Conectar";
             this.conectar.UseVisualStyleBackColor = true;
@@ -147,10 +143,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(123, 487);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Location = new System.Drawing.Point(92, 396);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 28);
+            this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 12;
             this.button1.Text = "Desconectar";
             this.button1.UseVisualStyleBackColor = true;
@@ -160,38 +155,34 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(8, 48);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(6, 39);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 20);
+            this.label1.Size = new System.Drawing.Size(67, 16);
             this.label1.TabIndex = 8;
             this.label1.Text = "Nombre:";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(152, 48);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Location = new System.Drawing.Point(114, 39);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(105, 22);
+            this.textBox1.Size = new System.Drawing.Size(80, 20);
             this.textBox1.TabIndex = 9;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(8, 98);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(6, 80);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(111, 20);
+            this.label4.Size = new System.Drawing.Size(91, 16);
             this.label4.TabIndex = 10;
             this.label4.Text = "Contraseña:";
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(152, 98);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox2.Location = new System.Drawing.Point(114, 80);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(105, 22);
+            this.textBox2.Size = new System.Drawing.Size(80, 20);
             this.textBox2.TabIndex = 11;
             // 
             // groupBox2
@@ -202,21 +193,18 @@
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.textBox1);
-            this.groupBox2.Location = new System.Drawing.Point(48, 76);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Location = new System.Drawing.Point(36, 62);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox2.Size = new System.Drawing.Size(267, 223);
+            this.groupBox2.Size = new System.Drawing.Size(200, 181);
             this.groupBox2.TabIndex = 12;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Iniciar sesion";
             // 
             // registro
             // 
-            this.registro.Location = new System.Drawing.Point(152, 167);
-            this.registro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.registro.Location = new System.Drawing.Point(114, 136);
             this.registro.Name = "registro";
-            this.registro.Size = new System.Drawing.Size(100, 28);
+            this.registro.Size = new System.Drawing.Size(75, 23);
             this.registro.TabIndex = 13;
             this.registro.Text = "Registrarse";
             this.registro.UseVisualStyleBackColor = true;
@@ -224,25 +212,64 @@
             // 
             // LogIn
             // 
-            this.LogIn.Location = new System.Drawing.Point(29, 167);
-            this.LogIn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LogIn.Location = new System.Drawing.Point(22, 136);
             this.LogIn.Name = "LogIn";
-            this.LogIn.Size = new System.Drawing.Size(100, 28);
+            this.LogIn.Size = new System.Drawing.Size(75, 23);
             this.LogIn.TabIndex = 12;
             this.LogIn.Text = "Log In";
             this.LogIn.UseVisualStyleBackColor = true;
             this.LogIn.Click += new System.EventHandler(this.Login_click);
             // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.conectadosGrid);
+            this.groupBox3.Controls.Add(this.Conectados);
+            this.groupBox3.Controls.Add(this.Jugar);
+            this.groupBox3.Location = new System.Drawing.Point(381, 38);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(270, 165);
+            this.groupBox3.TabIndex = 14;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "groupBox3";
+            // 
+            // Jugar
+            // 
+            this.Jugar.Location = new System.Drawing.Point(103, 136);
+            this.Jugar.Name = "Jugar";
+            this.Jugar.Size = new System.Drawing.Size(75, 23);
+            this.Jugar.TabIndex = 0;
+            this.Jugar.Text = "Jugar";
+            this.Jugar.UseVisualStyleBackColor = true;
+            this.Jugar.Click += new System.EventHandler(this.Jugar_Click);
+            // 
+            // Conectados
+            // 
+            this.Conectados.Location = new System.Drawing.Point(103, 19);
+            this.Conectados.Name = "Conectados";
+            this.Conectados.Size = new System.Drawing.Size(75, 23);
+            this.Conectados.TabIndex = 1;
+            this.Conectados.Text = "Conectados";
+            this.Conectados.UseVisualStyleBackColor = true;
+            this.Conectados.Click += new System.EventHandler(this.Conectados_Click);
+            // 
+            // conectadosGrid
+            // 
+            this.conectadosGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.conectadosGrid.Location = new System.Drawing.Point(23, 48);
+            this.conectadosGrid.Name = "conectadosGrid";
+            this.conectadosGrid.Size = new System.Drawing.Size(227, 82);
+            this.conectadosGrid.TabIndex = 2;
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(988, 692);
+            this.ClientSize = new System.Drawing.Size(741, 562);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.conectar);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -250,6 +277,8 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.conectadosGrid)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -272,6 +301,10 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button LogIn;
         private System.Windows.Forms.Button registro;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.DataGridView conectadosGrid;
+        private System.Windows.Forms.Button Conectados;
+        private System.Windows.Forms.Button Jugar;
     }
 }
 

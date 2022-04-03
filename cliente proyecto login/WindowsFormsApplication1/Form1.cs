@@ -158,6 +158,41 @@ namespace WindowsFormsApplication1
                 groupBox1.Enabled = true;
             }
         }
+
+        private void Jugar_Click(object sender, EventArgs e)
+        {
+            Form2 f2 = new Form2();
+            f2.ShowDialog();
+        }
+
+        private void Conectados_Click(object sender, EventArgs e)
+        {
+            string mensaje = "6/";
+            // Enviamos al servidor el nombre tecleado
+            byte[] msg = System.Text.Encoding.ASCII.GetBytes(mensaje);
+            server.Send(msg);
+
+            // Recibimos la respuesta del servidor
+            byte[] msg2 = new byte[80];
+            server.Receive(msg2);
+            string[] trozos = Encoding.ASCII.GetString(msg2).Split('/');
+            int codigo = Convert.ToInt32(trozos[0]);
+            mensaje = trozos[0].Split('\0')[0];
+
+            int i = 0;
+            while (i < codigo)
+            {
+                string[] nombres = new string[10];
+                nombres[i] = trozos[1 + i];
+
+                conectadosGrid.Rows[i].Cells[0].Value = nombres[i];
+                conectadosGrid.Rows[i].Cells[1].Value = "Conectado";
+
+                i++;
+            }
+
+
+        }
     }
 
 }
